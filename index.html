@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select The Best player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+        .budget{
+            color: coral;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <header class="container mt-5 ">
+        <div class="d-flex bg-dark mb-4">
+            <div class="">
+                <img class="img-fluid" src="images/ronaldo.jpg" alt="">
+            </div>
+            <div class="p-4 mt-5">
+                <h1 class="budget">Select The Best Player</h1>
+                <p class="text-white">This assignment is easy,But website is hard.I forget the previous Design of
+                    bootstrap.I Should more
+                    and more Practise.But not a Time.Then i will do the Design Part and developer.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <img src="images/lio-messi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title" id="messi-name">Leonel Messi</h5>
+                        <div class="d-flex justify-content-evenly">
+                            <p>50 Goals</p>
+                            <p>500 assist</p>
+                        </div>
+                        <button id="messi-id"  class="btn btn-primary w-75">SELECT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="images/ronaldinho.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title" id="ronaldinho">Ronaldinho</h5>
+                        <div class="d-flex justify-content-evenly">
+                            <p>50 Goals</p>
+                            <p>500 assist</p>
+                        </div>
+                        <button id="ronaldinho-id" class="btn btn-primary w-75">SELECT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="images/dibala.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title" id="dibala">Dibala</h5>
+                        <div class="d-flex justify-content-evenly">
+                            <p>50 Goals</p>
+                            <p>500 assist</p>
+                        </div>
+                        <button id="dibala-id" class="btn btn-primary w-75">SELECT</button>
+                    </div>
+                </div>
+            </div>
+            <!-- selecred player -->
+            <div class="col-3 bg-dark text-white">
+                <h2 class="text-center budget">Selected-V</h2>
+                <ol id="player-add-list">
+
+                </ol>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="card">
+                    <img src="images/MBappe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title" id="mbappe">MBappe</h5>
+                        <div class="d-flex justify-content-evenly">
+                            <p>50 Goals</p>
+                            <p>500 assist</p>
+                        </div>
+                        <button id="mbappe-id" class="btn btn-primary w-75">SELECT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="images/ronaldo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title" id="ronaldo">Ronaldo</h5>
+                        <div class="d-flex justify-content-evenly">
+                            <p>50 Goals</p>
+                            <p>500 assist</p>
+                        </div>
+                        <button id="ronaldo-id" class="btn btn-primary w-75">SELECT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="images/angel-dimaria.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center bg-dark text-white">
+                        <h5 class="card-title" id="dimaria">Angel Dimaria</h5>
+                        <div class="d-flex justify-content-evenly">
+                            <p>50 Goals</p>
+                            <p>500 assist</p>
+                        </div>
+                        <button class="btn btn-primary w-75" id="dimaria-id">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--------------calulate section ------------>
+            <div class="col-3">
+                <div class="bg-dark text-white text-capitalize text-center p-3 pt-3">
+                    <h4 class="budget">Budget</h4>
+
+                    <div class="row mb-3">
+                        <label for="" class="col-3 col-form-label">PerPlayer:</label>
+                        <div class="col-8">
+                            <input id="per-player" type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <button id="calculate" class="w-100 btn btn-primary text-capitalize">
+                        calculate
+                    </button>
+                    <p class="mt-3">Player Expenses $<span id="player-Expenses">00</span></p>
+
+                    <div class="row mb-3">
+                        <label for="" class="col-3 col-form-label">manager:</label>
+                        <div class="col-8">
+                            <input id="manager" type="number" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="" class="col-3 col-form-label">Coach:</label>
+                        <div class="col-8">
+                            <input id="coach" type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <button id="calculate-total" class="w-100 btn btn-primary text-capitalize">
+                        calculate Total
+                    </button>
+
+                    <div class="d-flex flex-row justify-content-between mt-3">
+                        <p class="d-inline">Total:</p>
+                        <p class="d-inline">$<span id="total-amount">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="calculate.js"></script>
+</body>
+
+</html>
