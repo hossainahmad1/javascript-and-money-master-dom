@@ -107,5 +107,20 @@ document.getElementById('calculate').addEventListener('click', function () {
 });
 
 
+// calculate total amount 
+document.getElementById('calculate-total').addEventListener('click', function () {
+    // manager amount
+    const managerValue = getTextValueById('manager')
+    // coach amount
+    const coachValue = getTextValueById('coach');
+    // total expenses
+    const playerExpenses = document.getElementById('player-Expenses');
+    const playerExpensesString = playerExpenses.innerText;
+    const playerExpensesElement = parseFloat(playerExpensesString);
+    const calculatetotalAmount = playerExpensesElement + managerValue + coachValue;
+    const totalAmount = document.getElementById('total-amount');
+    totalAmount.innerText = calculatetotalAmount;
+});
+
 
 
