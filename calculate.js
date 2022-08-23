@@ -11,16 +11,14 @@ function checkLength(inputId) {
     const check = document.getElementById(inputId);
     const liLengths = check.children.length;
     return liLengths;
-    
+
 }
 // player button disabled click
 function playerClick(clicks) {
     const btnClick = document.getElementById(clicks);
-    const btnClicks = btnClick.setAttribute('disabled',true);
+    const btnClicks = btnClick.setAttribute('disabled', true);
     return btnClicks;
 }
-
-
 
 // selector added player list ;
 // messi selector
